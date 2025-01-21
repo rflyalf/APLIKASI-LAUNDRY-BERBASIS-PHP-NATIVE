@@ -5,7 +5,7 @@ include '../koneksi.php';
 $harga_per_kilo = $_POST['harga_per_kilo'];
 
 // Update harga di database
-$query = "UPDATE harga SET harga_per_kilo='$harga_per_kilo' WHERE harga_per_kilo='$harga_per_kilo'";
+$query = "UPDATE harga SET harga_per_kilo='$harga_per_kilo'";
 mysqli_query($conn, $query);
 
 // Redirect kembali ke halaman setting harga
